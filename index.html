@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Habit Tracker Dashboard</title>
-</head>
-<body>
-  <h1>🔍 Habit Tracker Realtime View</h1>
-  <div id="output">Loading...</div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <form id="loginForm">
+    <h1>Login</h1>
+    <label for="username">Username:</label>
+    <input type="text" id="username" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+    <br>
+    <button type="submit">Login</button>
+  </form>
 
-  <!-- Firebase scripts and your app -->
-  <script type="module" src="index.js"></script>
-</body>
+  <div id="habitTracker">
+    <h1>Habit Tracker</h1>
+    <form id="habitForm">
+      <h3>Click to add recommended habits</h3>
+      <ul id="recommendedHabits"></ul>
+      <input type="text" id="habitInput" placeholder="Enter a new habit" required>
+      <button type="submit">Add Habit</button>
+    </form>
+    <div id="output">
+      <h2>Your Habits</h2>
+      <ul id="habitList"></ul>
+    </div>
+    <div id="weeklyProgress">
+      <h2>Weekly Progress</h2>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>

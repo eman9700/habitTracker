@@ -1,0 +1,49 @@
+#habitTracker {
+  display: none;
+  /* Initially hidden */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#output {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+button {
+  margin-left: 5px;
+}
+
+#recommendedHabits {
+  list-style-type: none;
+  padding: 0;
+}
+
+#weeklyProgress {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#weeklyProgress h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#weeklyProgress div {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #555;
+}
